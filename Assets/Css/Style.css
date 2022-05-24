@@ -1,0 +1,201 @@
+:root {
+    --prim_red: rgb(201, 20, 0);
+    --prim_yellow: #f1c530;
+    --prim_blue: rgb(99, 99, 177);
+    --prim_blueText: rgb(25, 25, 226);
+    --prim_black: rgb(64, 61, 61);
+    --prim_white: #ffffff;
+
+  }
+html {
+    font-size: 14px;
+ 
+}
+a:hover {
+    color: var(--prim_blue )!important;
+}
+nav {
+    background-color: var(--prim_black);
+    color: white;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+.bgBlack {
+    background-color: var(--prim_black);
+}
+.bgBlue {
+    background-color: var(--prim_blue) !important;
+}
+
+ul {
+      margin: 0 !important;
+
+  }
+.tab_left {
+    background: var(--prim_black);  
+    border: solid 1px white;
+    border-radius: 10px;
+    padding: 5% 5% 16rem 5%;
+    margin: 5%;
+    color: white;
+   /* ----------shadow -------------- */
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.tab_left a {
+    color: white;
+    text-decoration: none;
+
+    
+}
+.middle{
+    color: white;
+    background: var(--prim_blue);
+    text-align: center;
+}
+.middle form {
+    margin: 1% 15%;
+    padding: 2% 5%;
+    border-radius: 5px;
+    background-color: rgba(238, 238, 238, 30%);
+}
+.middle input {
+    border: none;
+}
+.middle p {
+    text-align: justify;
+}
+.boutton_no_bg, .boutton_no_bg2, .boutton_no_bgZoom  {
+    background-color: var(--prim_black) ;
+    color: white;
+    border: solid 0.2px white;
+    font-size: xx-small;
+    border-radius: 15px;
+    padding: 8px 8px;
+    white-space: nowrap;
+    width: 10em;
+    margin: 0% 0 15%;
+}
+  .boutton_no_bg:hover {
+    background-color: var(--prim_blue) !important;
+}
+.boutton_no_bg2:hover {
+    background-color: var(--prim_black) !important;
+}
+.boutton_no_bgZoom:hover {
+    transform:scale(1.1);
+}
+
+.formAremplir {
+  border-radius: 15px;
+  width: 100%;
+  color: var(--prim_black);
+  background-color: var(--prim_white);
+  border: none;
+}
+.tab_right {
+    color: white;
+    background: var(--prim_black);
+    border: solid 1px white;
+    border-radius: 10px;
+    padding: 5% 5% 11rem 5%;
+    margin: 5%;
+    /* ----------shadow -------------- */
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+footer {
+    background-color: var(--prim_black);
+    color: white;
+}
+.subscribe {
+    text-align: center; 
+}
+
+.copyright {
+      background: var(--prim_black);
+      color: white;
+}
+.soon {
+    text-decoration: underline;
+    font-style: italic;
+}
+.notif {
+    display: none;
+}
+.noPuce {
+ list-style-type: none;
+}
+
+/* -------------------------- Simulating_page ---------------------------------- */
+
+.NavSimul {
+    border-radius: 10px 10px 0px 0px;
+}
+.NavSimul li, .NavSimulOuvert li {
+    font-size: smaller;
+    border: solid 1px white;
+    border-bottom: none;
+    border-radius: 10px;
+}
+.NavSimulOuvert {
+border-radius: 0px 0px 10px 10px;
+}
+.NavSimulArrondi {
+    border-radius: 10px
+}
+#vid {
+    background-color: black;
+    background-image: url(../Images/play.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.btnFlex {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+.yesBtn {
+    width: 70px;
+}
+.italic {
+    font-style: italic;
+}
+.underline {
+    text-decoration: underline;
+}
+
+/* --------- Animation ------------ */
+.beforeTrans{
+    transform: translateX(+1000%);
+    opacity: 0;
+}
+.trans {
+    transform: translateX(0);
+    opacity: 1;
+    transition: ease 0.6s;
+}
+#metierParSecteur, #commerceImmobilier {
+    display: none ;
+}
+.commerceImmobilierHide{
+    width: 0%;
+    visibility: hidden;
+    opacity: 0;
+    transition: ease 0.6s;
+    margin-left: 50%;
+    
+}
+.commerceImmobilierShow{
+    width: 100%;
+    visibility:visible;
+    opacity: 1; 
+    margin-left: 0%;
+}
